@@ -1,0 +1,5 @@
+*.aug
+*.log
+*.out
+*.pdf
+./data.tex
