@@ -123,36 +123,43 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer - Tools \& Internal Developer Platform}{Jan 2024 -- Present}
+      { \companyLatest\ }{\addressLatestCompany\ }
+      \resumeItemListStart
+        \resumeItem{Developed full-stack applications and \textbf{self-service Jenkins pipelines} on AWS, improving developer productivity and ensuring \textbf{reproducible builds}, which increased confidence in automated tests by maintaining consistent test environments}
+        \resumeItem{Optimized in-house tools built with \textbf{Spring, React, Memcached, and PostgreSQL}, resulting in a 70\% reduction in \textbf{triage time} by consolidating disparate systems into a unified dashboard}
+        \resumeItem{Created \textbf{cli-tools and wrappers with bash, ruby and python with vagrant} to help devs with config management, dev env setup, pipeable/scriptable utils, with a reduced DSL like syntax}
+        \resumeItem{Enforced consistent code style at the framework/repo level using \textbf{Checkstyle} and prevented common coding mistakes by using Java bytecode libraries to extend custom \textbf{SpotBugs detectors}, improving early bug detection by 20\%}
+        \resumeItem{Designed and deployed an internal \textbf{LLM-based chatbot with RAG}, fine tuned on proprietary codebases and documentation, reducing onboarding time for new hires by 1 month and improving troubleshooting efficiency}
+        \resumeItem{Enhanced \textbf{observability} across CI/CD pipelines by implementing custom algorithms to track test failures across versions and pipelines, mitigating intermittent issues, resulting in a 50\% reduction in recurring failures}
+        \resumeItem{Scaled automation framework to support \textbf{200K+ tests per pipeline and 50+ pipelines daily} in Jenkins, reducing triage time for most teams from days to under 24 hours}
+        \resumeItem{Managed and scaled a \textbf{self-hosted ELK stack} for real-time monitoring and analysis of large volumes of test data, enabling proactive issue detection and faster resolution}
+      \resumeItemListEnd
 
     \resumeSubheading
-      {Software Engineer - Product Engineering}{Sep 2022 -- Present}
+      {Software Engineer - Product Engineering}{Sep 2022 -- Dec 2023}
       { \companyog\ - $($Acquired By \companynew\ $)$ }{\address\ }
       \resumeItemListStart
-        \resumeItem{Helped migrate our product from \textbf{Java 8} to \textbf{Java 17} as part of tech upgrade as part of the core platform team}
-        \resumeItem{Delivered 2 complex epics that involved refactoring the whole product (backend and frontend) that \textbf{added new core level general features}}
-        \resumeItem{Unblocked team, wrote compose scripts to spin up and auto configure multiple RDBMs instances configured for use with our product, this reduced time to delivery of an epic by \textbf{3 months}}
-        \resumeItem{Helped QA By automating integration tests using TestNG and an internal framework which cut down manual regression testing for our epics by \textbf{60\%}}
-        \resumeItem{Found a huge performance bug, which upon fixing, reduced the time to create a REST resource by two orders of magnetitude from \textbf{more than 1hr to less than 1 sec}}
-        \resumeItem{Maintained personal work wiki and documentation as a Git repo that really \textbf{helped new joinees and onboarding}}
-        \resumeItem{Maintained multiple team specific Jenkins automation pipelines and keeping them \textbf{updated} and \textbf{well documented}}
+        \resumeItem{Migrated core product from \textbf{Java 8 to Java 17}, improving performance and maintainability}
+        \resumeItem{Automated multi-RDBMS setup using compose scripts, cutting project delivery time by 3 months}
+        \resumeItem{Fixed performance bottleneck, reducing REST resource creation time from over 1 hour to 1 second}
+        \resumeItem{Maintained and optimized Jenkins pipelines for continuous integration and delivery}
       \resumeItemListEnd
 
     \resumeSubheading
       {Data Engineer - Solutions/Use Case Team}{March 2022 -- Aug 2022}{}{}
       \resumeItemListStart
-        \resumeItem{Was part of the Solutions/Data-Engineering team where we \textbf{saved a client millions of dollars per year} in licensing costs, by bringing their data processing pipline in house}
-        \resumeItem{Made an internal tool, that immensely helped our Solutions Devops team in migrating a client from an older version of Apache Ranger which cut down manual and was able to be delivered \textbf{2 weeks earlier}}
-        \resumeItem{Created a custom reusable pipeline using Python, PySpark and Pandas, that could be plugged into other pipelines to automate generation and emailing of excel reports from tables in Hive \textbf{which is still in use today in Client's Production environment}}
-        \resumeItem{Maintained 2 Critical and Complex Pipelines of a client and fixed any errors so that reports were generated $($weekly$)$ on time, with an SLA of \textbf{1 day delay at max}}
+        \resumeItem{Saved millions in Vendor costs annually by moving client’s data processing pipelines in-house using \textbf{Python, PySpark, and Pandas}}
+        \resumeItem{Developed reusable pipeline for report automation, deployed in production using Hive}
+        \resumeItem{Managed two critical pipelines, ensuring timely report delivery with minimal delays}
       \resumeItemListEnd
 
     \resumeSubheading
       {Product/Infra Support Engineer - Product Support}{Aug 2021 -- Feb 2022}{}{}
       \resumeItemListStart
-        \resumeItem{Did product deployments and upgrades for two client with complex deployment strategies In Production as a part of the Support Team}
-        \resumeItem{Made an internal monitoring tool using Ansible and AWS Lambda that sent out alerts and perform healthchecks which was critical for our Managed Services Team, which is \textbf{still in use in production today}}
-        \resumeItem{Involved with production outage and tactfully handling Big Clients}
-      \resumeItemListEnd
+        \resumeItem{Provided client-facing app support, focusing on \textbf{issue triaging, deployment, and upgrades} using \textbf{Linux, Ansible, and Python}}
+    \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -161,16 +168,15 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, Scala, Kotlin $($gradle$)$, SQL, TypeScript, JavaScript, HTML + CSS/SCSS/Tailwind, C, Rust} \\
-     \textbf{Backend}{: Spring and Spring Boot, JUnit+Mockito, TestNG, Selenium } \\
-     \textbf{Frontend}{: Angular + AgGrid, Node.js, Jasmine, React} \\
-     \textbf{Bigdata}{: CDP, aws EMR, Hadoop, Spark, MR, Hive, Yarn, Ranger, Apache Solr $($for Ranger$)$} \\
-     \textbf{Platform}{: Linux $($RHEL/CentOS$)$, Bash, Unix Coreutils, Kerberos, Linux Networking } \\
-     \textbf{Build and Deployment}{: Git, Docker, Podman, Maven, Gradle, Ansible, RPM, Jenkins, Gitlab, Bitbucket} \\
-     \textbf{Developer Tools}{: Jira, Neovim, VSCode, PyCharm, IntelliJ, Veracode, Swagger/OpenAPI} \\
-     \textbf{Cloud}{: AWS - aws-cli, ec2, s3, vpc, security groups, cloudfront, EMR, elastic bean stalk} \\
-     \textbf{Data Wrangling}{: Pandas, PySpark,  Openpyxl}\\
-     \textbf{Databases}{: MySQL $($and mariaDB$)$, Postgres, DB2, Oracle, MSSQL, Redis, H2}
+     \textbf{Languages}{: Java, Python, Bash, Ruby, Scala, TypeScript, SQL, JavaScript} \\
+     \textbf{Backend}{: Spring Boot, JUnit, Mockito, TestNG, Selenium} \\
+     \textbf{Frontend}{: React, Angular, Node.js, HTML, CSS, Jest, Jasmine} \\
+     \textbf{Big Data}{: Hadoop, Spark, Hive, Yarn, Ranger, EMR} \\
+     \textbf{Platform}{: Linux $($RHEL/CentOS$)$, Bash, Coreutils, Elasticsearch, Solr} \\
+     \textbf{Build and Deployment}{: Git, Docker, Podman, Maven, Gradle, Ansible, Jenkins, GitLab, Bitbucket} \\
+     \textbf{Cloud}{: AWS $($EC2, S3, VPC, CloudFront, Elastic Beanstalk$)$} \\
+     \textbf{Data Wrangling}{: Pandas, PySpark, Openpyxl} \\
+     \textbf{Databases}{: MySQL $($MariaDB$)$, PostgreSQL, DB2, Oracle, MSSQL, Redis, H2}
     }}
  \end{itemize}
 
@@ -180,9 +186,6 @@
     \resumeSubheading
       {\mastersUNI\ }{\mastersAdd\ }
       {Masters of Technology in Information Technology}{Aug. 2019 -- June 2021}
-    \resumeSubheading
-      {\bachUNI\ }{\bachAdd\ }
-      {Bachelors of Technology in Electronics and Telecommunications}{June. 2013 -- May 2017}
   \resumeSubHeadingListEnd
 
 
